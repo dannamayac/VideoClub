@@ -82,6 +82,11 @@ $ php artisan migrate
 ```sh
 php artisan serve
 ```
+10. Borre el acceso directo en la carpeta public de storage y ejecute el siguiente comando para crear nuevamente este acceso y permita la lectura correcta de las imagenes:
 
-10. Por último abra su navegador web y vaya a la dirección que aparece en la línea de comandos después de ejecutar el comando anterior. Por lo general, es algo como http://localhost:8000 ó puede entrar a la ventana de Laragon, dar clic derecho, luego clic en www y abrir el proyeco videoclub.
+```sh
+php artisan storage:link
+```
+
+11. Por último abra su navegador web y vaya a la dirección que aparece en la línea de comandos después de ejecutar el comando anterior. Por lo general, es algo como http://localhost:8000 ó puede entrar a la ventana de Laragon, dar clic derecho, luego clic en www y abrir el proyeco videoclub.
 
