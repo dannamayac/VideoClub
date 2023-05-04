@@ -20,6 +20,8 @@ Se desarrolla proyecto de un Video Club usando PHP con el framework Laravel y po
 - Laravel Framework 10.9.0
 - MySql
 - Visual studio code
+- Bootstrap
+- JQuery
 
 <br>
 
