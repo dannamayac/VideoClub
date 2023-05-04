@@ -53,7 +53,7 @@ $ CREATE DATABASE videoclub
 4. Exportar la base de datos ejecutando el siguiente comando. La ruta o path es donde esta alojado el proyecto.
 
 ```sh
-$ SOURCE <path>/videoclub/bd_entregables/videoclub.sql
+$ SOURCE <path>/videoclub/bd/videoclub.sql
 ```
 
 5. Abra el archivo de configuración del proyecto (se llama .env) y asegúrese de que la configuración de la base de datos sea correcta. Debe proporcionar la información de la base de datos que ha creado en el paso anterior (nombre de la base de datos, usuario y contraseña).
