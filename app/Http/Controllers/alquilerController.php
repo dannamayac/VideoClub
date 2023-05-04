@@ -42,8 +42,8 @@ class alquilerController extends Controller
     public function vistaEditarAlquiler($id)
     {
         $alquiler=Alquiler::find($id);
-        
-        return view('Alquiler.alquiler',compact('alquiler'));
+        $pelicula=Pelicula::find($alquiler -> id_peliculas);
+        return view('Alquiler.editarAlquiler',compact('alquiler','pelicula'));
     }
     public function editarAlquiler(Request $request, $id, $id_pelicula)
     {

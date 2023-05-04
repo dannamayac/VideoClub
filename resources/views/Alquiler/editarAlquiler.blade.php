@@ -4,7 +4,7 @@
     @section('page-content')
 
     <div class="col-12" style="margin-top: 10px;">
-    <h1>Crear Alquiler</h1>
+    <h1>Editar Alquiler</h1>
     <div class="card">
         <div class="card-body">
             <div class="row">
@@ -15,15 +15,15 @@
                 <input type="hidden" name="precio_unitario" id="precio_unitario" value="{{ $pelicula->precio_unitario }}">
                     <div class="col-sm-6" style="margin-top: 10px;">
                         <label for="defaultFormControlInput" class="form-label" >Cedula Cliente</label>
-                        <input name="id_cliente" type="text" class="form-control" id="nombre" placeholder="" aria-describedby="defaultFormControlHelp" />
+                        <input name="id_cliente" type="text" class="form-control" id="nombre" placeholder="{{$alquiler -> Cliente -> nombre}}" aria-describedby="defaultFormControlHelp" />
                     </div>
                     <div class="col-sm-6" style="margin-top: 10px;">
                         <label for="defaultFormControlInput" class="form-label">Fecha Inicio</label>
-                        <input name="fecha_inicio" type="date" class="form-control" id="fecha_inicio" placeholder="" aria-describedby="defaultFormControlHelp" />
+                        <input name="fecha_inicio" type="date" class="form-control" id="fecha_inicio" aria-describedby="defaultFormControlHelp" />
                     </div>
                     <div class="col-sm-6" style="margin-top: 10px;">
                         <label for="defaultFormControlInput" class="form-label">Fecha Final</label>
-                        <input name="fecha_fin" type="date" class="form-control" id="fecha_fin" placeholder="" aria-describedby="defaultFormControlHelp" />
+                        <input name="fecha_fin" type="date" class="form-control" id="fecha_fin" aria-describedby="defaultFormControlHelp" />
                     </div>
 
                     <div class="col-12"style="margin-top:20px;">
@@ -33,7 +33,7 @@
                     </div>
                    
                     <button class="btn btn-success" style="margin-top: 20px;">Guardar</button>
-                    <a class="btn btn-danger" style="margin-top: 20px;" href="{{ route('indexPelicula')}}">Cancelar</a>
+                    <a class="btn btn-danger" style="margin-top: 20px;" href="{{ route('indexAlquiler')}}">Cancelar</a>
                 </form>
             </div>
         </div>
